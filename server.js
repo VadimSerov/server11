@@ -48,7 +48,8 @@ server.on('request',function(request,response){
 				response.end(defs.htm);
 			}
 		});
-	}else if(request.url=='/app.js'){
+	}
+ 	if(request.url=='/app.js'){
 		response.writeHead(200,{'Content-Type':'text/javascript'});
 		fs.readFile(__dirname+'/content/js/app.js',function(err1,data1){
 			if(!isNaN(err1)){
@@ -57,7 +58,8 @@ server.on('request',function(request,response){
 				response.end(defs.js);
 			}
 		});
-	}else if(request.url=='/app.css'){
+	}
+	if(request.url=='/app.css'){
 		response.writeHead(200,{'Content-Type':'text/css'});
 		fs.readFile(__dirname+'/content/css/app.css',function(err2,data2){
 			if(!isNaN(err2)){
@@ -66,9 +68,6 @@ server.on('request',function(request,response){
 				response.end(defs.css);
 			}
 		});
-	}else {
-		response.writeHead(200,{'Content-Type':'text/html'});
-		response.end('Content not found... ');
 	}
 });
 
