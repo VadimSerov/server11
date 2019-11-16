@@ -29,8 +29,7 @@ h2{
 	background-image: linear-gradient(to bottom right, #943bc7 0% ,#1982A5 100%);   
 	-webkit-box-shadow:0px 0px 2px #bababa, inset 0px 0px 2px #ffffff; 
 	-moz-box-shadow: 0px 0px 2px #bababa,  inset 0px 0px 2px #ffffff;  
-	box-shadow:0px 0px 2px #bababa, inset 0px 0px 2px #ffffff;  
-	 
+	box-shadow:0px 0px 2px #bababa, inset 0px 0px 2px #ffffff;
 }
 .sendinput {
 	width: 700px;

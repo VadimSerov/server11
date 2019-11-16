@@ -78,9 +78,9 @@ server.listen(port,host,function(){
 //установить счётчик рассоединений
 //n_disconnect=0;
 
-ios.sockets.on('connection', function (socket) {
+ios.sockets.on('connection', function(socket) {
 
-	socket.on('eventServer', function (data) {
+	socket.on('eventServer', function(data) {
 		console.log(data);
 		socket.emit('eventClient', { "data": 'Hello Client! You send: '+data });
 	});
@@ -140,7 +140,7 @@ ios.sockets.on('connection', function (socket) {
 		}
 	});
 	// что делать при разъединении с браузером 
-	socket.on('disconnect', function () {
+	socket.on('disconnect', function() {
 		//console.log('user disconnected',n_disconnect++);
 	});
 });
